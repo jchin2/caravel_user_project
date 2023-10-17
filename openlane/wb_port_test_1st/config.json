@@ -1,0 +1,20 @@
+{
+    "DESIGN_NAME": "wb_port_test_1st",
+    "VERILOG_FILES": "dir::../../verilog/rtl/wb_port_test_1st.v",
+    "CLOCK_PORT": "wb_clk_i",
+    "CLOCK_PERIOD": 10.0,
+    "DESIGN_IS_CORE": false,
+    
+    "FP_PDN_AUTO_ADJUST": 1,
+    "FP_CORE_UTIL": 50,
+    "FP_SIZING": "absolute",
+    "DIE_AREA": "0 0 3000 3000", 
+    "FP_IO_MODE": 1,
+    "PL_TARGET_DENSITY": 0.5,
+    
+    
+     "MACRO_PLACEMENT_CFG": "dir::macro_placement.cfg",
+    "EXTRA_LEFS": "dir::../../lef/eespfal_sixtyfourbit_top.lef",
+    "EXTRA_GDS_FILES": "dir::../../gds/eespfal_sixtyfourbit_top.gds",
+    "VERILOG_FILES_BLACKBOX": "dir::../../verilog/bb/eespfal_sixtyfourbit_top.bb.v"
+}

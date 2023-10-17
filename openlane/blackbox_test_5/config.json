@@ -1,0 +1,48 @@
+{
+    "DESIGN_NAME": "blackbox_test_5",
+    "VERILOG_FILES": "dir::../../verilog/rtl/blackbox_test_5.v",
+    "CLOCK_PORT": "clk_top",
+    "CLOCK_PERIOD": 10.0,
+    "DESIGN_IS_CORE": 0,
+    
+	"FP_PDN_CFG": "dir::pdn_cfg_here.tcl",
+	"FP_PDN_VPITCH": 20,
+	"FP_PDN_VSPACING": 20,
+	
+	"ROUTING_CORES": 4,
+	"VDD_NETS": "vdda1",
+	"GND_NETS": "GND_GPIO",
+	"SYNTH_USE_PG_PINS_DEFINES": "USE_POWER_PINS",
+	"FP_PDN_MACRO_HOOKS": "lane0 vdda1 GND_GPIO vdda1 GND_GPIO",
+	
+	"FP_PDN_AUTO_ADJUST": 1,
+	"FP_PDN_CHECK_NODES": 0,
+	"FP_PDN_CORE_RING":0,
+	
+	"FP_SIZING": "absolute",
+	"DIE_AREA": "0 0 430 2050", 
+    "FP_CORE_UTIL": 50,
+    "FP_IO_MODE": 1,
+    "PL_TARGET_DENSITY": 0.8,
+    
+	"PL_RESIZER_DESIGN_OPTIMIZATIONS": 0,
+    "PL_RESIZER_TIMING_OPTIMIZATIONS": 0,
+    "GLB_RESIZER_DESIGN_OPTIMIZATIONS": 0,
+    "GLB_RESIZER_TIMING_OPTIMIZATIONS": 0,
+    "PL_RESIZER_BUFFER_INPUT_PORTS": 0,
+    "RUN_CTS":0,
+    "FP_PDN_ENABLE_RAILS": 0,
+    "GRT_REPAIR_ANTENNAS": 0,
+    "RUN_FILL_INSERTION": 0,
+    "RUN_TAP_DECAP_INSERTION": 0, 
+    
+	"RUN_IRDROP_REPORT": 0,
+	"FP_PDN_SKIPTRIM": 0,
+    "LVS_CONNECT_BY_LABEL": 1,
+    
+    "FP_PIN_ORDER_CFG": "dir::pin_order.cfg",
+    "MACRO_PLACEMENT_CFG": "dir::macro_placement.cfg",
+    "EXTRA_LEFS": "dir::../../lef/bitsixtyfour_EESPFAL_switch_2.lef",
+    "EXTRA_GDS_FILES": "dir::../../gds/bitsixtyfour_EESPFAL_switch_2.gds",
+    "VERILOG_FILES_BLACKBOX": "dir::../../verilog/bb/*.v"
+}
