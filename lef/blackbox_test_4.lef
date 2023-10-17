@@ -1,0 +1,394 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO blackbox_test_4
+  CLASS BLOCK ;
+  FOREIGN blackbox_test_4 ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 100.000 BY 250.000 ;
+  PIN Dis_Phase_top
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 180.240 4.000 180.840 ;
+    END
+  END Dis_Phase_top
+  PIN Dis_top[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 125.840 4.000 126.440 ;
+    END
+  END Dis_top[0]
+  PIN Dis_top[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 81.640 4.000 82.240 ;
+    END
+  END Dis_top[1]
+  PIN Dis_top[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 95.240 4.000 95.840 ;
+    END
+  END Dis_top[2]
+  PIN Dis_top[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 112.240 4.000 112.840 ;
+    END
+  END Dis_top[3]
+  PIN GND_GPIO
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER met4 ;
+        RECT 31.040 10.880 32.640 236.640 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 51.040 10.880 52.640 236.640 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 71.040 10.880 72.640 236.640 ;
+    END
+  END GND_GPIO
+  PIN clk_top[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 136.040 4.000 136.640 ;
+    END
+  END clk_top[0]
+  PIN clk_top[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 139.440 4.000 140.040 ;
+    END
+  END clk_top[1]
+  PIN clk_top[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 119.040 4.000 119.640 ;
+    END
+  END clk_top[2]
+  PIN clk_top[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 91.840 4.000 92.440 ;
+    END
+  END clk_top[3]
+  PIN k_bar_top[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 146.240 4.000 146.840 ;
+    END
+  END k_bar_top[0]
+  PIN k_bar_top[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 149.640 4.000 150.240 ;
+    END
+  END k_bar_top[1]
+  PIN k_bar_top[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 115.640 4.000 116.240 ;
+    END
+  END k_bar_top[2]
+  PIN k_bar_top[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 153.040 4.000 153.640 ;
+    END
+  END k_bar_top[3]
+  PIN k_top[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 88.440 4.000 89.040 ;
+    END
+  END k_top[0]
+  PIN k_top[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 159.840 4.000 160.440 ;
+    END
+  END k_top[1]
+  PIN k_top[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 78.240 4.000 78.840 ;
+    END
+  END k_top[2]
+  PIN k_top[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 129.240 4.000 129.840 ;
+    END
+  END k_top[3]
+  PIN s_bar_top[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 71.440 4.000 72.040 ;
+    END
+  END s_bar_top[0]
+  PIN s_bar_top[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 163.240 4.000 163.840 ;
+    END
+  END s_bar_top[1]
+  PIN s_bar_top[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 108.840 4.000 109.440 ;
+    END
+  END s_bar_top[2]
+  PIN s_bar_top[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 142.840 4.000 143.440 ;
+    END
+  END s_bar_top[3]
+  PIN s_top[0]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 170.040 4.000 170.640 ;
+    END
+  END s_top[0]
+  PIN s_top[1]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 132.640 4.000 133.240 ;
+    END
+  END s_top[1]
+  PIN s_top[2]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 105.440 4.000 106.040 ;
+    END
+  END s_top[2]
+  PIN s_top[3]
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 85.040 4.000 85.640 ;
+    END
+  END s_top[3]
+  PIN vdda1
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER met4 ;
+        RECT 21.040 10.880 22.640 236.640 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 41.040 10.880 42.640 236.640 ;
+    END
+    PORT
+      LAYER met4 ;
+        RECT 61.040 10.880 62.640 236.640 ;
+    END
+  END vdda1
+  PIN x_bar_top[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 122.440 4.000 123.040 ;
+    END
+  END x_bar_top[0]
+  PIN x_bar_top[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 173.440 4.000 174.040 ;
+    END
+  END x_bar_top[1]
+  PIN x_bar_top[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 102.040 4.000 102.640 ;
+    END
+  END x_bar_top[2]
+  PIN x_bar_top[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 176.840 4.000 177.440 ;
+    END
+  END x_bar_top[3]
+  PIN x_top[0]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 156.440 4.000 157.040 ;
+    END
+  END x_top[0]
+  PIN x_top[1]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 166.640 4.000 167.240 ;
+    END
+  END x_top[1]
+  PIN x_top[2]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 98.640 4.000 99.240 ;
+    END
+  END x_top[2]
+  PIN x_top[3]
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER met3 ;
+        RECT 0.000 74.840 4.000 75.440 ;
+    END
+  END x_top[3]
+  OBS
+      LAYER li1 ;
+        RECT 13.130 60.630 74.100 188.690 ;
+      LAYER met1 ;
+        RECT 6.510 61.890 83.190 191.380 ;
+      LAYER met2 ;
+        RECT 6.530 61.940 83.170 201.805 ;
+      LAYER met3 ;
+        RECT 0.270 181.240 83.195 201.785 ;
+        RECT 4.400 179.840 83.195 181.240 ;
+        RECT 0.270 177.840 83.195 179.840 ;
+        RECT 4.400 176.440 83.195 177.840 ;
+        RECT 0.270 174.440 83.195 176.440 ;
+        RECT 4.400 173.040 83.195 174.440 ;
+        RECT 0.270 171.040 83.195 173.040 ;
+        RECT 4.400 169.640 83.195 171.040 ;
+        RECT 0.270 167.640 83.195 169.640 ;
+        RECT 4.400 166.240 83.195 167.640 ;
+        RECT 0.270 164.240 83.195 166.240 ;
+        RECT 4.400 162.840 83.195 164.240 ;
+        RECT 0.270 160.840 83.195 162.840 ;
+        RECT 4.400 159.440 83.195 160.840 ;
+        RECT 0.270 157.440 83.195 159.440 ;
+        RECT 4.400 156.040 83.195 157.440 ;
+        RECT 0.270 154.040 83.195 156.040 ;
+        RECT 4.400 152.640 83.195 154.040 ;
+        RECT 0.270 150.640 83.195 152.640 ;
+        RECT 4.400 149.240 83.195 150.640 ;
+        RECT 0.270 147.240 83.195 149.240 ;
+        RECT 4.400 145.840 83.195 147.240 ;
+        RECT 0.270 143.840 83.195 145.840 ;
+        RECT 4.400 142.440 83.195 143.840 ;
+        RECT 0.270 140.440 83.195 142.440 ;
+        RECT 4.400 139.040 83.195 140.440 ;
+        RECT 0.270 137.040 83.195 139.040 ;
+        RECT 4.400 135.640 83.195 137.040 ;
+        RECT 0.270 133.640 83.195 135.640 ;
+        RECT 4.400 132.240 83.195 133.640 ;
+        RECT 0.270 130.240 83.195 132.240 ;
+        RECT 4.400 128.840 83.195 130.240 ;
+        RECT 0.270 126.840 83.195 128.840 ;
+        RECT 4.400 125.440 83.195 126.840 ;
+        RECT 0.270 123.440 83.195 125.440 ;
+        RECT 4.400 122.040 83.195 123.440 ;
+        RECT 0.270 120.040 83.195 122.040 ;
+        RECT 4.400 118.640 83.195 120.040 ;
+        RECT 0.270 116.640 83.195 118.640 ;
+        RECT 4.400 115.240 83.195 116.640 ;
+        RECT 0.270 113.240 83.195 115.240 ;
+        RECT 4.400 111.840 83.195 113.240 ;
+        RECT 0.270 109.840 83.195 111.840 ;
+        RECT 4.400 108.440 83.195 109.840 ;
+        RECT 0.270 106.440 83.195 108.440 ;
+        RECT 4.400 105.040 83.195 106.440 ;
+        RECT 0.270 103.040 83.195 105.040 ;
+        RECT 4.400 101.640 83.195 103.040 ;
+        RECT 0.270 99.640 83.195 101.640 ;
+        RECT 4.400 98.240 83.195 99.640 ;
+        RECT 0.270 96.240 83.195 98.240 ;
+        RECT 4.400 94.840 83.195 96.240 ;
+        RECT 0.270 92.840 83.195 94.840 ;
+        RECT 4.400 91.440 83.195 92.840 ;
+        RECT 0.270 89.440 83.195 91.440 ;
+        RECT 4.400 88.040 83.195 89.440 ;
+        RECT 0.270 86.040 83.195 88.040 ;
+        RECT 4.400 84.640 83.195 86.040 ;
+        RECT 0.270 82.640 83.195 84.640 ;
+        RECT 4.400 81.240 83.195 82.640 ;
+        RECT 0.270 79.240 83.195 81.240 ;
+        RECT 4.400 77.840 83.195 79.240 ;
+        RECT 0.270 75.840 83.195 77.840 ;
+        RECT 4.400 74.440 83.195 75.840 ;
+        RECT 0.270 72.440 83.195 74.440 ;
+        RECT 4.400 71.040 83.195 72.440 ;
+        RECT 0.270 64.095 83.195 71.040 ;
+      LAYER met4 ;
+        RECT 0.295 64.095 20.640 201.105 ;
+        RECT 23.040 64.095 30.640 201.105 ;
+        RECT 33.040 64.095 40.640 201.105 ;
+        RECT 43.040 64.095 50.640 201.105 ;
+        RECT 53.040 64.095 60.640 201.105 ;
+        RECT 63.040 64.095 70.640 201.105 ;
+        RECT 73.040 64.095 78.330 201.105 ;
+      LAYER met5 ;
+        RECT 13.460 92.700 78.540 182.700 ;
+  END
+END blackbox_test_4
+END LIBRARY
+
